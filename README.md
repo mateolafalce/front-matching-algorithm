@@ -2,7 +2,7 @@
 
 ## Installation Options
 
-### Option 1: Using Docker Compose (Recommended)
+### Option 1: Using Docker Compose
 
 1. Clone the repository and navigate to the project folder:
 
