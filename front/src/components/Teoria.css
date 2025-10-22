@@ -1,0 +1,84 @@
+.teoria-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  padding-left: 100px;
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  color: #333;
+  min-height: 100vh;
+}
+
+.teoria-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1e1e1e;
+  border-bottom: 3px solid #1e1e1e;
+  padding-bottom: 0.5rem;
+}
+
+.teoria-container h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: #2d2d2d;
+}
+
+.teoria-container h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #3d3d3d;
+}
+
+.teoria-container p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.teoria-container ul {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.teoria-container li {
+  margin-bottom: 1rem;
+}
+
+.formula {
+  display: inline-block;
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.formula-block {
+  display: block;
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  border-left: 4px solid #1e1e1e;
+  overflow-x: auto;
+}
+
+.references {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+.references a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}

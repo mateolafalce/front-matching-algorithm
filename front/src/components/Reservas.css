@@ -1,0 +1,197 @@
+.reservas-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  color: #666;
+}
+
+.error {
+  color: #dc3545;
+}
+
+.dia-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dia-actual {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  min-width: 200px;
+  text-align: center;
+}
+
+.nav-button {
+  background: #007bff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s;
+  font-size: 1.5rem; /* Añadido */
+  font-weight: bold; /* Añadido */
+  padding-bottom: 4px; /* Ajuste para centrado vertical */
+}
+
+.nav-button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.nav-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.reservas-grid {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.header-row {
+  display: grid;
+  grid-template-columns: 100px repeat(auto-fit, minmax(150px, 1fr));
+  border-bottom: 2px solid #007bff;
+  background: #f8f9fa;
+}
+
+.hora-header, .cancha-header {
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+.horario-row {
+  display: grid;
+  grid-template-columns: 100px repeat(auto-fit, minmax(150px, 1fr));
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.horario-row:hover {
+  background: #f8f9fa;
+}
+
+.hora-cell {
+  padding: 1rem;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+}
+
+.cancha-cell {
+  padding: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #e0e0e0;
+  font-weight: 500;
+}
+
+.cancha-cell-disponible {
+  color: #28a745;
+  background-color: #f0fff4;
+}
+
+.cancha-cell-disponible:hover {
+  background-color: #d4edda;
+}
+
+.cancha-cell-ocupado {
+  color: #007bff;
+  background-color: #e7f3ff;
+}
+
+.cancha-cell-ocupado:hover {
+  background-color: #cce5ff;
+}
+
+.slot-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Estilos para el Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.user-list li {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.user-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.user-list li:last-child {
+  border-bottom: none;
+}
