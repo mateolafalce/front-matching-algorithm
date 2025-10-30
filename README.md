@@ -135,7 +135,5 @@ Si quieres contribuir, abre un issue o haz un fork y un PR. Indica claramente ca
 - Añadir tests automatizados para backend y frontend.
 - Integrar una base de datos persistente y migraciones.
 
----
 
-> Este README fue actualizado para incluir una descripción general del sistema y conservar las instrucciones de instalación existentes.
 
