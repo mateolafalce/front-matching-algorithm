@@ -118,22 +118,5 @@ npm install
 npm run dev
 ```
 
-## Desarrollo y notas
-
-- El backend usa blueprints para agrupar rutas por dominio (usuarios, preferencias, reservas). Revisa `back/*.py` para entender contractos JSON y estructuras de datos.
-- El frontend contiene componentes React en `front/src/components/` (por ejemplo `Teoria.jsx`, `GestionarUsers.jsx`, `Reservas.jsx`). `Teoria.jsx` describe la base matemática y la optimización de los pesos α/β.
-- El seeder (`back/seeder.py`) crea datos de ejemplo; útil para pruebas locales.
-- Si se planea persistencia real, adaptar el backend para conectar a una base de datos (SQLite/Postgres) y actualizar el seeder.
-
-## Contribuciones
-
-Si quieres contribuir, abre un issue o haz un fork y un PR. Indica claramente cambios en API o esquema de datos.
-
-## Estado y alcances futuros
-
-- Mejorar modelo de aprendizaje: pasar de una única β a un modelo más rico (p. ej. modelos de factorization o embeddings por usuario).
-- Añadir tests automatizados para backend y frontend.
-- Integrar una base de datos persistente y migraciones.
-
 
 
