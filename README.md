@@ -1,24 +1,6 @@
-# Matching Algorithm — Frontend + Backend
+# Matching Algorithm - Frontend + Backend
 
-Una aplicación full-stack para recomendar compañeros de juego en reservas de canchas basada en preferencias y historial de partidos. Frontend en React (Vite) y backend en Flask.
-
-## Descripción larga
-
-Este repositorio contiene el frontend y el backend de un sistema de emparejamiento (matching) pensado para plataformas de reserva de canchas deportivas. El objetivo es recomendar a un usuario los mejores candidatos con quienes jugar una reserva, considerando tanto las preferencias (días, horarios, canchas, categoría) como el historial de partidos entre usuarios.
-
-Componentes principales:
-- Backend (carpeta `back/`): API REST desarrollada con Flask. Expone rutas para usuarios, preferencias, datos estáticos y reservas. Incluye un seeder para poblar datos de ejemplo.
-- Frontend (carpeta `front/`): aplicación en React + Vite que ofrece una interfaz para gestionar usuarios, ver teoría del algoritmo, y reservar canchas.
-
-Algoritmo de emparejamiento (resumen):
-
-- Para cada par de usuarios (i, j) se calcula un puntaje A(i, j) = α × S(i, j) + β × J(i, j).
-   - S(i, j): similitud de preferencias (normalizada entre 0 y 1), basada en una distancia euclidiana sobre dimensiones como días, horarios, canchas y categoría.
-   - J(i, j): factor basado en el historial de partidos, J(i, j) = g(i, j) / g(i) donde g(i, j) son los partidos entre i y j, y g(i) el total de partidos de i.
-   - α y β son pesos con α + β = 1. Inicialmente pueden tomarse igualitarios (α = β = 0.5), pero se propone un ajuste automático mediante optimización (minimizar error cuadrático medio sobre datos reales de elecciones) usando un simple paso de gradiente para actualizar β (y α = 1 − β).
-
-Con esto se pueden generar rankings (top-x) por usuario o matrices de calor que visualicen la afinidad entre usuarios.
-
+Una aplicación full-stack para recomendar compañeros de juego en reservas de canchas basada en preferencias y historial de partidos. Frontend en React (Vite) y backend en Flask. Este repositorio contiene el frontend y el backend de un sistema de emparejamiento (matching) pensado para plataformas de reserva de canchas deportivas. El objetivo es recomendar a un usuario los mejores candidatos con quienes jugar una reserva, considerando tanto las preferencias (días, horarios, canchas, categoría) como el historial de partidos entre usuarios. Con esto se pueden generar rankings (top-x) por usuario o matrices de calor que visualicen la afinidad entre usuarios.
 
 ### Usar Docker Compose
 
