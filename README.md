@@ -19,26 +19,8 @@ Algoritmo de emparejamiento (resumen):
 
 Con esto se pueden generar rankings (top-x) por usuario o matrices de calor que visualicen la afinidad entre usuarios.
 
-## Estructura del repositorio
 
-- back/
-   - `app.py` — punto de entrada del backend Flask
-   - `users.py`, `preferencias.py`, `reservas.py` — blueprints con endpoints API
-   - `seeder.py` — script que crea datos iniciales en memoria/BD de desarrollo
-   - `requirements.txt` — dependencias Python
-- front/
-   - React + Vite app con componentes en `src/components`
-   - `package.json`, configuraciones de TypeScript/ESLint cuando correspondan
-
-## Endpoints relevantes (resumen)
-
-- `/api/...` — rutas registradas en `back/app.py` (usuarios, reservas, datos estáticos, preferencias). Revisa los archivos en `back/` para ver la lista completa de rutas y formatos JSON esperados.
-
-## Instalación y ejecución
-
-Se proveen dos opciones: Docker Compose (recomendado para desarrollo local rápido) o instalación desde la fuente.
-
-### Opción 1: Usar Docker Compose (recomendado)
+### Usar Docker Compose
 
 1. Clona el repositorio y posicionate en la carpeta del proyecto:
 
@@ -85,7 +67,7 @@ docker-compose build
 docker-compose down -v
 ```
 
-### Opción 2: Desde la fuente (entorno local)
+### Desde la maquina
 
 #### Backend
 
